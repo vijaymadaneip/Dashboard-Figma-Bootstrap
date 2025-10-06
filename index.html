@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>DashBoard|Figma</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <style>
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="ms-0 mt-0 mb-5">
+        <!--left side of the page-->
+        <div class="container-fluid mt-4 min-vh-100">
+
+            <div class="row h-100">
+                <!-- <div class="col-12 col-sm-2 mb-3"> -->
+                <div class="col-12 col-sm-2 col-lg-2 mt-2">
+                    <!-- <div class=" col-12 col-lg-3 col-md-6 mt-2"> -->
+                    <button class="btn btn-primary d-md-none d-block" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">
+                        ☰ Menu
+                    </button>
+
+                    <div class="offcanvas-md  offcanvas-start" tabindex="-1" id="sidebarOffcanvas">
+                        <div class="offcanvas-header">
+                            <button type="button " class="btn-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#sidebarOffcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="container  ">
+                                <a href="#" class=" mb-1">
+                                    <img src="assets/logo/Logo.png" alt="logo" class="img-fluid">
+                                </a>
+                                <ul class="list-unstyled">
+                                    <li class="ps-0 pt-3 pb-3 ">OVERVIEW</li>
+                                    <li>
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="assets/overview_icons/app-item.png">
+                                            </div>
+                                            <div>
+                                                <p>App</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="assets/overview_icons/app-item.png">
+                                            </div>
+                                            <div>
+                                                <p>E-commerce</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="assets/overview_icons/Analytics-item.png">
+                                            </div>
+                                            <div>
+                                                <p>Analytics</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="assets/overview_icons/banking-item.png">
+                                            </div>
+                                            <div>
+                                                <p>Banking</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="assets/overview_icons/booking-item.png">
+                                            </div>
+                                            <div>
+                                                <p>Booking</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="assets/overview_icons/file-item.png">
+                                            </div>
+                                            <div>
+                                                <p>File</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex flex-row gap-2">
+                                            <div>
+                                                <img src="assets/overview_icons/icon.png">
+                                            </div>
+                                            <div>
+                                                <p>Course-item</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="ps-0 pb-3">MANAGEMENT</li>
+                                    <!--User-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-3">
+                                                <div>
+                                                    <img class="pe-1" src="assets/management_icons/user.png">
+                                                </div>
+                                                <div>
+                                                    <p>User</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Product-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between ">
+                                            <div class="d-flex flex-row ">
+                                                <div>
+                                                    <img class="pe-2" src="assets/management_icons/product.png">
+                                                </div>
+                                                <div>
+                                                    <p>Product</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Order-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/orders.png">
+                                                </div>
+                                                <div>
+                                                    <p>Order</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Invoice-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/invoice.png">
+                                                </div>
+                                                <div>
+                                                    <p>Invoice</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Blog-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/blog.png">
+                                                </div>
+                                                <div>
+                                                    <p>Blog</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Job-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/job.png">
+                                                </div>
+                                                <div>
+                                                    <p>Job</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Tour-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/tour.png">
+                                                </div>
+                                                <div>
+                                                    <p>Tour</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--File Manager-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/fielmanager.png">
+                                                </div>
+                                                <div>
+                                                    <p>File manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Mail-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/mail.png">
+                                                </div>
+                                                <div>
+                                                    <p>Mail</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Chat-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/chat.png">
+                                                </div>
+                                                <div>
+                                                    <p>Chat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--Calendar-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/calender.png">
+                                                </div>
+                                                <div>
+                                                    <p>Calendar</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--kanban-->
+                                    <li>
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="d-flex flex-row gap-2">
+                                                <div>
+                                                    <img src="assets/management_icons/kanban.png">
+                                                </div>
+                                                <div>
+                                                    <p>kanban</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--right side of the page -->
+                <div class="col-12 col-sm-10">
+                    <div class="container-fluid ">
+                        <nav class="navbar bg-light mb-3 mt-3 sticky-top">
+                            <div class="container-fluid d-flex justify-content-between align-items-center">
+                                <!--left-->
+                                <div class="fs-5 d-flex flex-row justify-content-start align-baseline gap-3">
+                                    <div style="color: purple;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-hexagon-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866z" />
+                                        </svg>
+                                    </div>
+                                    <div class=" d-flex justify-content-center align-items-center">Team 1</div>
+                                    <span class=" rounded shadow p-1 py-0">Free</span>
+                                </div>
+                                <!--Right-->
+                                <div class="d-flex gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-bell" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </nav>
+                        <!--Hello welcome back-->
+                        <div class="fs-2">
+                            <strong>
+                                <h4>Hi, Welcome back 👋</h4>
+                            </strong>
+                        </div>
+
+                        <!--Horizontal Cards-->
+                        <div class="row mt-3 justify-content-center align-baseline">
+                            <!--Card no 1-->
+                            <div class=" col-12 col-lg-3 col-md-6 mt-2">
+                                <div class="container rounded-5 card1 p-3"
+                                    style="background: linear-gradient(135deg, #90FDFF 0%, #11FBFF 100%);">
+                                    <div class="d-flex flex-row justify-content-between pb-5">
+                                        <img src="assets/cardimages/ic-glass-bag.png " alt="ic-glass-bag">
+                                        <div class="d-flex flex-row">
+                                            <!-- <img  src="assets/cardimages/primary-shape.png "
+                                                alt="primary-shape"> -->
+                                            <h4>8.2%</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <h6>Weekly sales</h6>
+                                            <h2>8.2k</h2>
+                                        </div>
+                                        <img class="object-fit-contain" src="assets/cardimages/stroke.png "
+                                            alt="stroke">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--Card no 2-->
+
+                            <div class=" col-12 col-lg-3 col-md-6 mt-2">
+                                <div class="container rounded-5 card1 p-3"
+                                    style="background: linear-gradient(135deg, #EFD6FF 0%, #C684FF 100%);">
+
+                                    <div class="d-flex flex-row justify-content-between pb-5">
+                                        <img src="assets/cardimages/ic-glass-users.png" alt="ic-glass-users">
+                                        <div class="d-flex flex-row">
+                                            <!-- <img  src="assets/cardimages/primary-shape.png "
+                                                alt="primary-shape"> -->
+                                            <h4>86.6%</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <h6>New Users</h6>
+                                            <h2>86.6k</h2>
+                                        </div>
+                                        <img class="object-fit-contain" src="assets/cardimages/stroke2.png "
+                                            alt="stroke">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Card no 3-->
+                            <div class=" col-12 col-lg-3 col-md-6 mt-2">
+                                <div class="container rounded-5 card1 p-3"
+                                    style="background: linear-gradient(135deg, #FFF5CC 0%, #FFD666 100%);">
+
+                                    <div class="d-flex flex-row justify-content-between pb-5">
+                                        <img src="assets/cardimages/ic-glass-buy.png " alt="ic-glass-buy">
+                                        <div class="d-flex flex-row">
+                                            <!-- <img  src="assets/cardimages/primary-shape.png "
+                                                alt="primary-shape"> -->
+                                            <h4>73.9%</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <h6>Weekly sales</h6>
+                                            <h2>73.9k</h2>
+                                        </div>
+                                        <img class="object-fit-contain" src="assets/cardimages/Sparkline.png "
+                                            alt="stroke">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Card no 4-->
+                            <div class=" col-12 col-lg-3 col-md-6 mt-2">
+                                <div class="container rounded-5 card1 p-3"
+                                    style="background: linear-gradient(135deg, #FFE9D5 0%, #FFAC82 100%);">
+
+                                    <div class="d-flex flex-row justify-content-between pb-5">
+                                        <img src="assets/cardimages/ic-glass-message.png " alt="ic-glass-bag">
+                                        <div class="d-flex flex-row">
+                                            <!-- <img  src="assets/cardimages/primary-shape.png "
+                                                alt="primary-shape"> -->
+                                            <h4>79.0%</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <h6>Weekly sales</h6>
+                                            <h2>79.0</h2>
+                                        </div>
+                                        <img class="object-fit-contain" src="assets/cardimages/stroke3.png "
+                                            alt="stroke">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--- Current Visits and Websites Visits-->
+                        <div class="row mt-3">
+                            <!-- <div class="col-12 col-sm-4  "> -->
+                            <div class=" col-12 col-lg-4 col-md-6 mt-2">
+                                <div class="container rounded-5 shadow-sm p-5">
+                                    <div>
+                                        <div>
+                                            <h4>Current Visits</h4>
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <img class="w-100 m-3" src="assets/graphs/Pie.png" alt="graphs">
+                                        </div>
+
+                                        <div
+                                            class="d-flex flex-row justify-content-center align-items-center gap-2 mt-3">
+                                            <span class="timeline-dot" style="background-color: #008A8C;"></span>
+                                            <div>America</div>
+                                            <span class="timeline-dot" style="background-color: #FFD666;"></span>
+                                            <div>Asia</div>
+                                            <span class="timeline-dot" style="background-color: #006C9C;"></span>
+                                            <div>Europe</div>
+                                            <span class="timeline-dot" style="background-color: #FF5630;"></span>
+                                            <div>Africa</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- <div class="col-12 col-sm-8"> -->
+                            <div class=" col-12 col-lg-8 col-md-6 mt-2">
+                                <div class=" container rounded-5 shadow-sm p-5">
+                                    <div>
+                                        <div>
+                                            <h4>Website visits</h4>
+                                        </div>
+                                        <p class="text-muted">(+43%) than last year</p>
+                                        <div
+                                            class="d-flex flex-row justify-content-end align-items-baseline gap-3 mt-3">
+                                            <span class="timeline-dot" style="background-color: #008A8C;"></span>
+                                            <div>Team A</div>
+                                            <span class="timeline-dot" style="background-color: #FFD666;"></span>
+                                            <div>Team B</div>
+                                        </div>
+
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <img class="w-100 m-3" src="assets/graphs/Graph.png" alt="Graph">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Conversion rates and Current subject-->
+                        <div class="row mt-3">
+                            <!-- <div class="col-12 col-sm-8 "> -->
+                            <div class=" col-12 col-lg-8 col-md-6 mt-2">
+                                <div class=" container rounded-5 shadow-sm p-5">
+                                    <div>
+                                        <div>
+                                            <h4>Conversion rates</h4>
+                                        </div>
+                                        <p>(+43%) than last year</p>
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <img class="w-100 m-3" src="assets/graphs/Graph2.png" alt="Graph2">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 col-sm-4 "> -->
+                            <div class=" col-12 col-lg-4 col-md-6 mt-2">
+                                <div class="container rounded-5 shadow-sm p-5">
+                                    <div>
+                                        <div>
+                                            <h4>Current subject</h4>
+                                        </div>
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <img class="w-100 m-3" src="assets/graphs/Radar.png" alt="graphs">
+                                        </div>
+
+                                        <div
+                                            class="d-flex flex-row justify-content-center align-items-center gap-2 mt-3 p-0">
+                                            <span class="timeline-dot  me-3" style="background-color: #008A8C;"></span>
+                                            <div>Series 1</div>
+                                            <span class="timeline-dot  me-3" style="background-color: #FFAB00;"></span>
+                                            <div>Series 2</div>
+                                            <span class="timeline-dot  me-3" style="background-color: #00B8D9;"></span>
+                                            <div>Series 3</div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Newsand Current Order Timeline-->
+                        <div class="row mt-3">
+                            <!-- <div class="col-12 col-sm-8 "> -->
+                            <div class=" col-12 col-lg-8 col-md-12 mt-2">
+                                <div class="container rounded shadow-sm p-4">
+                                    <div>
+                                        <h4 class="ps-0 pb-3">News</h4>
+                                        <ul class="list-group ">
+                                            <!--NEWS1-->
+                                            <li
+                                                class="list-group-item  d-flex flex-row justify-content-between align-items-center p-3">
+                                                <!-- Left Section: Image + Text -->
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <img src="assets/news/news1.png" alt="news1" class="me-3"
+                                                        style="height:auto;">
+
+                                                    <div class="d-flex flex-column">
+                                                        <p class="mb-1 fw-bold">The Future of Renewable Energy:
+                                                            Innovations and Challenges Ahead</p>
+                                                        <p class="mb-0 text-muted">The sun slowly set over the horizon,
+                                                            painting the sky in vibrant
+                                                            hues of orange and pink.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Right Section: Date -->
+                                                <p class="mb-0 text-secondary">12 Jan 2022</p>
+                                            </li>
+                                            </li>
+                                            <!--NEWS2-->
+                                            <li
+                                                class="list-group-item d-flex flex-row justify-content-between align-items-center p-3">
+
+                                                <!-- Left Section: Image + Text -->
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <img src="assets/news/news2.png" alt="news1" class=" me-3"
+                                                        style=" height:auto;">
+
+                                                    <div class="d-flex flex-column">
+                                                        <p class="mb-1 fw-bold">Exploring the Impact of Artificial
+                                                            Intelligence on Modern Healthcare</p>
+                                                        <p class="mb-0 text-muted">The aroma of freshly brewed coffee
+                                                            filled the air, awakening my senses.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Section: Date -->
+                                                <p class="mb-0 text-secondary">11 Feb 2022</p>
+                                            </li>
+
+                                            <!--NEWS3-->
+                                            <li
+                                                class="list-group-item  d-flex flex-row justify-content-between align-items-center p-3 ">
+
+
+                                                <!-- Left Section: Image + Text -->
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <img src="assets/news/news3.png" alt="news1" class=" me-3"
+                                                        style=" height:auto;">
+
+                                                    <div class="d-flex flex-column">
+                                                        <p class="mb-1 fw-bold">Climate Change and Its Effects on Global
+                                                            Food Security</p>
+                                                        <p class="mb-0 text-muted">She eagerly opened the gift, her eyes
+                                                            sparkling with excitement.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Section: Date -->
+                                                <p class="mb-0 text-secondary">10 Sep 2022</p>
+                                            </li>
+                                            <!--NEWS4-->
+                                            <li
+                                                class="list-group-item  d-flex flex-row justify-content-between align-items-center p-3 ">
+
+
+                                                <!-- Left Section: Image + Text -->
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <img src="assets/news/news4.png" alt="news1" class="me-3"
+                                                        style="height:auto;">
+
+                                                    <div class="d-flex flex-column">
+                                                        <p class="mb-1 fw-bold">The Rise of Remote Work: Benefits
+                                                            Challenges and Future Trends</p>
+                                                        <p class="mb-0 text-muted">The old oak tree stood tall and
+                                                            majestic, its branches swaying
+                                                            gently in the breeze.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Section: Date -->
+                                                <p class="mb-0 text-secondary">09 Aug 2022</p>
+                                            </li>
+                                            <!--NEWS5-->
+                                            <li
+                                                class="list-group-item  d-flex flex-row justify-content-between align-items-center p-3 ">
+
+
+                                                <!-- Left Section: Image + Text -->
+                                                <div class="d-flex flex-row align-items-center">
+                                                    <img src="assets/news/news5.png" alt="news1" class="me-3"
+                                                        style="height:auto;">
+
+                                                    <div class="d-flex flex-column">
+                                                        <p class="mb-1 fw-bold">Understanding Blockchain Technology:
+                                                            Beyond Cryptocurrency</p>
+                                                        <p class="mb-0 text-muted">The children giggled with joy as they
+                                                            ran through the sprinklers
+                                                            on a hot summer day.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Section: Date -->
+                                                <p class="mb-0 text-secondary">08 Apr 2022</p>
+
+
+
+                                            </li>
+
+                                        </ul>
+                                        <div class="d-flex justify-content-end mt-4">
+                                            <a href="#" class="text-dark fw-bold">View All > </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Order and timeline-->
+                            <!-- <div class="col-12 col-sm-4 "> -->
+                            <div class=" col-12 col-lg-4 col-md-12 mt-2">
+
+                                <div class="container rounded shadow-sm p-3">
+
+                                    <h5 class="ps-0 pt-3 p-4">Order timeline</h5>
+
+                                    <div class="d-flex flex-row  justify-content-start align-items-center">
+                                        <span class="timeline-dot bg-primary me-3"></span>
+                                        <p class="m-0 p-0  fs-5">1983, orders, $4220</p>
+                                    </div>
+                                    <div class="d-flex flex-row  mt-0 mb-3">
+                                        <div class="vr  me-4 ms-1 mt-2"></div>
+                                        <small class="text-muted">2 hours ago</small>
+                                    </div>
+
+
+
+                                    <div class="d-flex flex-row  justify-content-start align-items-center">
+                                        <span class="timeline-dot bg-success me-3"></span>
+                                        <p class="m-0 p-0 fs-5">12 Invoices have been paid</p>
+                                    </div>
+                                    <div class="d-flex flex-row  mt-0 mb-3">
+                                        <div class="vr  me-4 ms-1 mt-2"></div>
+                                        <small class="text-muted">2 hours ago</small>
+                                    </div>
+
+                                    <div class="d-flex flex-row  justify-content-start align-items-center">
+                                        <span class="timeline-dot bg-danger me-3"></span>
+                                        <p class="m-0 p-0 fs-5">Order #37745 from September</p>
+                                    </div>
+                                    <div class="d-flex flex-row  mt-0 mb-3">
+                                        <div class="vr  me-4 ms-1 mt-2"></div>
+                                        <small class="text-muted">12 Jan 2022</small>
+                                    </div>
+
+                                    <div class="d-flex flex-row  justify-content-start align-items-center">
+                                        <span class="timeline-dot bg-primary me-3"></span>
+                                        <p class="m-0 p-0 fs-5">New order placed #XF-2356</p>
+                                    </div>
+                                    <div class="d-flex flex-row  mt-0 mb-3">
+                                        <div class="vr  me-4 ms-1 mt-2"></div>
+                                        <small class="text-muted">11 Feb 2022</small>
+                                    </div>
+
+                                    <div class="d-flex flex-row  justify-content-start align-items-center">
+                                        <span class="timeline-dot bg-info me-3"></span>
+                                        <p class="m-0 p-0 fs-5">New order placed #XF-2356</p>
+                                    </div>
+                                    <div class="d-flex flex-row  mt-0 mb-3">
+                                        <div class="vr  me-4 ms-1 mt-2"></div>
+                                        <small class="text-muted">10 Sept 2022</small>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Traffic by side and Task-->
+
+                        <div class="row mt-3">
+                            <!-- <div class="col-12 col-sm-4 "> -->
+                            <div class=" col-12 col-lg-4 col-md-6 mt-2">
+                                <div class="container rounded shadow p-2">
+                                    <h4 class="pt-4 ps-4">Traffic by site</h4>
+                                    <div class="icons-setting">
+                                        <div class="d-flex flex-row p-1 ">
+                                            <div
+                                                class="container rounded-3  shadow-sm d-flex flex-column  justify-content-center align-items-center m-3">
+                                                <img class="m-2" src="assets/logo/fb.png" alt="facebook">
+                                                <h3 class="m-2">8.2k</h3>
+                                                <p class="text-muted m-1">Facebook</p>
+                                            </div>
+
+                                            <div
+                                                class="container rounded-3 shadow-sm d-flex flex-column  justify-content-center align-items-center m-3">
+                                                <img class="m-2" src="assets/logo/google.png" alt="facebook">
+                                                <h3 class="m-2">86.6k</h3>
+                                                <p class="text-muted m-1">Google</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex- p-1">
+                                            <div
+                                                class="container rounded-3 shadow-sm d-flex flex-column  justify-content-center align-items-center m-3">
+                                                <img class="m-2" src="assets/logo/linkedin.png" alt="facebook">
+                                                <h3 class="m-2">73.9k</h3>
+                                                <p class="text-muted m-1">Linkedin</p>
+                                            </div>
+
+                                            <div
+                                                class="container rounded-3 shadow-sm d-flex flex-column  justify-content-center align-items-center m-3">
+                                                <img class="m-2" src="assets/logo/twitter.png" alt="facebook">
+                                                <h3 class="m-2">79k</h3>
+                                                <p class="text-muted m-1">Twitter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 col-sm-8 "> -->
+                            <div class=" col-12 col-lg-8 col-md-6 mt-2">
+
+                                <div class="container rounded shadow ">
+                                    <h4 class="pt-4 ps-4">Tasks</h4>
+                                    <div>
+
+                                        <div class="form-check d-flex flex-row justify-content-between ps-5 pe-5 pt-5">
+                                            <div class="task-data d-flex align-items-baseline gap-3">
+                                                <input class="form-check-input" type="checkbox" id="check1"
+                                                    name="option1" value="something">
+                                                <label class="form-check-label fs-5">Create firestone logo</label>
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="form-check d-flex flex-row justify-content-between ps-5 pe-5 pt-3">
+                                            <div class="task-data d-flex align-items-baseline gap-3">
+                                                <input class="form-check-input" type="checkbox" id="check1"
+                                                    name="option1" value="something" checked>
+                                                <label class="form-check-label fs-5">Add scss and js files if
+                                                    required</label>
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="form-check d-flex flex-row justify-content-between ps-5 pe-5 pt-3">
+                                            <div class="task-data d-flex align-items-baseline gap-3">
+                                                <input class="form-check-input" type="checkbox" id="check1"
+                                                    name="option1" value="something" checked>
+                                                <label class="form-check-label fs-5">Stakeholder meeting</label>
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="form-check d-flex flex-row justify-content-between ps-5 pe-5 pt-3">
+                                            <div class="task-data d-flex align-items-baseline gap-3">
+                                                <input class="form-check-input" type="checkbox" id="check1"
+                                                    name="option1" value="something">
+                                                <label class="form-check-label fs-5">Scoping & estimations</label>
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                        </div>
+
+                                        <div
+                                            class="form-check d-flex flex-row justify-content-between ps-5 pe-5 pt-3 pb-4">
+                                            <div class="task-data d-flex align-items-baseline gap-3">
+                                                <input class="form-check-input" type="checkbox" id="check1"
+                                                    name="option1" value="something">
+                                                <label class="form-check-label fs-5">Sprint showcase</label>
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots-vertical"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
