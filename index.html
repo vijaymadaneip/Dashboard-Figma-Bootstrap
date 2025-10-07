@@ -10,12 +10,18 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!--font awesome libaray cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Custom CSS -->
     <style>
         .timeline-dot {
             width: 12px;
             height: 12px;
             border-radius: 50%;
+        }
+
+        hr {
+            border-top: 1px dashed black;
         }
     </style>
 </head>
@@ -351,8 +357,15 @@
                                     <span class=" rounded shadow p-1 py-0">Free</span>
                                 </div>
                                 <!--Right-->
-                                <div class="d-flex gap-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+
+                                <div class="d-flex gap-3 justify-content-center">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <!-- <div class="container rounded bg-success"><img src="assets/logo/indiaflag.png " alt="flag"></div> -->
+                                    <i class="fa-solid fa-bell"></i>
+                                    <i class="fa-solid fa-users"></i>
+                                    <i class="fa-solid fa-gear"></i>
+                                    <i class="fa-solid fa-user"></i>
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
                                         <path
                                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
@@ -372,7 +385,7 @@
                                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                                         <path fill-rule="evenodd"
                                             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                    </svg>
+                                    </svg> -->
                                 </div>
                             </div>
                         </nav>
@@ -546,15 +559,144 @@
                         <div class="row mt-3">
                             <!-- <div class="col-12 col-sm-8 "> -->
                             <div class=" col-12 col-lg-8 col-md-6 mt-2">
-                                <div class=" container rounded-5 shadow-sm p-5">
-                                    <div>
+                                <div class=" container-sm rounded-5 shadow  p-5">
+                                    <div class="">
                                         <div>
                                             <h4>Conversion rates</h4>
                                         </div>
                                         <p>(+43%) than last year</p>
-                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                        <!-- <div class="w-100 d-flex justify-content-center align-items-center">
                                             <img class="w-100 m-3" src="assets/graphs/Graph2.png" alt="Graph2">
+                                        </div> -->
+                                        <div class="d-flex flex-column ">
+                                            <!--Itly-->
+                                            <div
+                                                class="d-flex flex-row justify-content-center align-items-center">
+
+                                                <div class="text-muted pe-4 ">Itly</div>
+
+                                                <div class="d-flex flex-column  w-100">
+                                                    <div class="d-flex flex-column gap-1 w-100">
+                                                        <hr class="p-0 mb-1">
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:70%; background: var(--primary-dark, #007779);">
+                                                                70%
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:50%; background: var(--primary-dark, #b2d6d6);">
+                                                                50%
+                                                            </div>
+                                                        </div>
+                                                        <hr class="p-0 mt-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--China-->
+                                            <div
+                                                class="d-flex flex-row justify-content-center align-items-center gap-3">
+
+                                                <div class="text-muted">China</div>
+
+                                                <div class="d-flex flex-column  w-100">
+                                                    <div class="d-flex flex-column gap-1 w-100">
+                                                        <hr class="p-0 mb-1">
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:90%; background: var(--primary-dark, #007779);">
+                                                                90%
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:50%; background: var(--primary-dark, #b2d6d6);">
+                                                                50%
+                                                            </div>
+                                                        </div>
+                                                        <hr class="p-0 mt-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Canada-->
+                                            <div
+                                                class="d-flex flex-row justify-content-center align-items-center gap-3">
+
+                                                <div class="text-muted">Canda</div>
+
+                                                <div class="d-flex flex-column  w-100">
+                                                    <div class="d-flex flex-column gap-1 w-100">
+                                                        <hr class="p-0 mb-1">
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:50%; background: var(--primary-dark, #007779);">
+                                                                50%
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:85%; background: var(--primary-dark, #b2d6d6);">
+                                                                85%
+                                                            </div>
+                                                        </div>
+                                                        <hr class="p-0 mt-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--United State-->
+                                            <div
+                                                class="d-flex flex-row justify-content-center align-items-center gap-4">
+
+                                                <div class="text-muted pe-3">US</div>
+
+                                                <div class="d-flex flex-column  w-100">
+                                                    <div class="d-flex flex-column gap-1 w-100">
+                                                        <hr class="p-0 mb-1">
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:90%; background: var(--primary-dark, #007779);">
+                                                                90%
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:50%; background: var(--primary-dark, #b2d6d6);">
+                                                                50%
+                                                            </div>
+                                                        </div>
+                                                        <hr class="p-0 mt-1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--United Kingdom-->
+                                            <div
+                                                class="d-flex flex-row justify-content-center align-items-center gap-3">
+
+                                                <div class="text-muted pe-4">UK</div>
+
+                                                <div class="d-flex flex-column  w-100">
+                                                    <div class="d-flex flex-column gap-1 w-100">
+                                                        <hr class="p-0 mb-1">
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:95%; background: var(--primary-dark, #007779);">
+                                                                95%
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress" style="height: 10px;">
+                                                            <div class="progress-bar"
+                                                                style="width:85%; background: var(--primary-dark, #b2d6d6);">
+                                                                85%
+                                                            </div>
+                                                        </div>
+                                                        <hr class="p-0 mt-1">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+
+
 
                                     </div>
                                 </div>
@@ -602,7 +744,7 @@
                                                     <img src="assets/news/news1.png" alt="news1" class="me-3"
                                                         style="height:auto;">
 
-                                                    <div class="d-flex flex-column">
+                                                    <div class="d-flex flex-column ">
                                                         <p class="mb-1 fw-bold">The Future of Renewable Energy:
                                                             Innovations and Challenges Ahead</p>
                                                         <p class="mb-0 text-muted">The sun slowly set over the horizon,
